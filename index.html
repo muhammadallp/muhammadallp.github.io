@@ -12,7 +12,7 @@
   </head>
   <body id="home">
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Muhammad Alip</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
     <section class="jumbotron text-center">
       <img src="img/mantap.jpg" alt="Muhammad alip" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4 fw-bold">Muhammad Alip</h1>
-      <p class="lead fw-bold"> Back-End</p>
+      <p class="lead fw-bold">Back-End</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -62,10 +62,10 @@
         </div>
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus explicabo odio nesciunt molestias tenetur voluptate architecto! Eaque reiciendis eligendi iste.</p>
+            <p>I am a graduate of Universitas Putra Indonesia YPT Padang in 2022. I am very interested in the field of information technology.</p>
           </div>
           <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat repellendus. Itaque dolores quo doloribus nobis omnis aspernatur, corporis aperiam officiis exercitationem dolorum dolorem porro!</p>
+            <p>Therefore, I am very happy to implement the experience and what I have learned. Being someone who is competent in information technology is one of my dreams.</p>
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@
             <div class="card">
               <img src="img/projects/projects1.jpg" class="card-img-top" alt="projects1" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Perancangan Sistem Informasi Geografis Analisa Rute terpendek pemadam Kebakaran.</p>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@
             <div class="card">
               <img src="img/projects/projects2.jpg" class="card-img-top" alt="projects2" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Perancangan Sistem Informasi Pemasaran Bordir Pada toko Bordir.</p>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@
             <div class="card">
               <img src="img/projects/projects3.jpg" class="card-img-top" alt="projects3" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Perancangan Sistem Informasi Geografis penjualan barang Bekas Rongsokan.</p>
               </div>
             </div>
           </div>
@@ -133,28 +133,38 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-6">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
+          <div class="col-md-6 text-center">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Thank you!</strong> We have received your message.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            <form name="submit-to-google-sheet">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" name="nama" placeholder="nama lengkap" required />
+                <label for="floatingInput">Nama Lengkap</label>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email </label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingPassword" name="email" placeholder="name@example.com" required />
+                <label for="floatingPassword">Email</label>
               </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" name="pesan" id="floatingTextarea2" style="height: 100px" required></textarea>
+                <label for="floatingTextarea2">Pesan</label>
               </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
+              <button type="submit" class="btn btn-dark col-6 btn-kirim">Kirim</button>
+
+              <button class="btn btn-dark btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#0d6efd"
+          fill="#171718f0"
           fill-opacity="1"
           d="M0,224L30,208C60,192,120,160,180,138.7C240,117,300,107,360,122.7C420,139,480,181,540,192C600,203,660,181,720,186.7C780,192,840,224,900,208C960,192,1020,128,1080,117.3C1140,107,1200,149,1260,149.3C1320,149,1380,107,1410,85.3L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
         ></path>
@@ -163,10 +173,37 @@
 
     <!-- akhir -->
     <!-- footer -->
-    <footer class="bg-primary text-white text-center pb-3">
-      <p>Created With Love By <a href="https://www.instagram.com/muhammadallp/" class="text-white fw-bold"> Muhammad Alip</a></p>
+    <footer class="bg-dark text-white text-center pb-3">
+      <p>Created By <a href="https://www.instagram.com/muhammadallp/" class="text-decoration-none text-white fw-bold"> Muhammad Alip</a></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbzNER-x4SO21Q-mnL2_Zq9qGC-3i2C6JxYeRRrvhzzU1UFpBQreEjTOP5RP_kTJxJZWKw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika submit di klik
+
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            myAlert.classList.toggle("d-none");
+            form.reset();
+
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
